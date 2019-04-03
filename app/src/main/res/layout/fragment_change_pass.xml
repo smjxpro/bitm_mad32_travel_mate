@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activities.DrawerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:padding="@dimen/large_spacing">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_pass"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size" />
+
+        <EditText
+            android:id="@+id/currentPassEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_current_pass"
+            android:inputType="textPassword"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_spacing"
+            android:text="@string/new_pass"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size" />
+
+        <EditText
+            android:id="@+id/newPassEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_new_pass"
+            android:inputType="textPassword"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_spacing"
+            android:text="@string/conf_new_password"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size" />
+
+        <EditText
+            android:id="@+id/confNewPassEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_new_pass"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/loading"
+            android:textColor="@color/waiting_color"
+            android:textSize="@dimen/default_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/errorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/error"
+            android:textColor="@color/error_color"
+            android:textSize="@dimen/default_text_size"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_spacing"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/confirmBtn"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_gravity="left"
+                android:background="@drawable/confirm_colored" />
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/large_spacing"
+                android:background="@drawable/cancel_colored" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

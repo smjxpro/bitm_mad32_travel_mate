@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/normal_spacing">
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/event_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/createdOnTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/created_on_c"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_text_size"
+        app:layout_constraintStart_toStartOf="@id/nameTv"
+        app:layout_constraintTop_toBottomOf="@id/nameTv" />
+
+    <TextView
+        android:id="@+id/startsOnTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/starts_on_c"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_text_size"
+        app:layout_constraintStart_toStartOf="@id/createdOnTv"
+        app:layout_constraintTop_toBottomOf="@id/createdOnTv" />
+
+    <TextView
+        android:id="@+id/createdOnValTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/created_on"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_text_size"
+        app:layout_constraintStart_toEndOf="@id/createdOnTv"
+        app:layout_constraintTop_toTopOf="@id/createdOnTv" />
+
+    <TextView
+        android:id="@+id/startsOnValTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/starts_on"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_text_size"
+        app:layout_constraintStart_toStartOf="@id/createdOnValTv"
+        app:layout_constraintTop_toBottomOf="@id/createdOnValTv" />
+
+    <TextView
+        android:id="@+id/daysLeftTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="54sp"
+        android:layout_marginTop="70sp"
+        android:text="@string/days_left"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/startsOnValTv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

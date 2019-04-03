@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true"
+    tools:context=".activities.DrawerActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/createdEventsTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/created_events"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_text_size"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/loadingTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/loading"
+        android:textColor="@color/waiting_color"
+        android:textSize="@dimen/large_text_size" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.Design.FloatingActionButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_margin="@dimen/normal_spacing"
+        android:text="@string/plus"
+        android:textSize="40sp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/rootLayout"
+        app:layout_constraintEnd_toEndOf="@+id/rootLayout" />
+
+    <LinearLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/create_a_new_event"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

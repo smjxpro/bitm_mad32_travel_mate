@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true"
+    tools:context=".activities.DrawerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/new_event"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventStatusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/budget_status"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/large_spacing">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/CustomProgressBarHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="@dimen/char_spacing"
+                android:background="@drawable/progressbar" />
+
+
+            <TextView
+                android:id="@+id/percentTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/char_spacing"
+                android:gravity="center"
+                android:text="0%"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+        </RelativeLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/eventDetailsTv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/default_text_size" />-->
+
+        <TextView
+            android:id="@+id/expTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/line_color"
+            android:padding="@dimen/char_spacing"
+            android:text="@string/expenditure"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/large_text_size" />
+
+        <LinearLayout
+            android:id="@+id/expLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/addNewExpTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line"
+                android:background="@drawable/list_bg"
+                android:text="Add New Expense"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+
+            <TextView
+                android:id="@+id/viewAllExpTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line"
+                android:background="@drawable/list_bg"
+                android:text="View All Expense"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+
+            <TextView
+                android:id="@+id/addBudgetTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line"
+                android:background="@drawable/list_bg"
+                android:text="Add More Budget"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/momTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/char_spacing"
+            android:background="@color/line_color"
+            android:padding="@dimen/char_spacing"
+            android:text="@string/moments"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <LinearLayout
+            android:id="@+id/momLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/takePhotoTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line"
+                android:background="@drawable/list_bg"
+                android:text="Take a photo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+
+            <TextView
+                android:id="@+id/galleryTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line"
+                android:background="@drawable/list_bg"
+                android:text="View Gallery"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+
+            <TextView
+                android:id="@+id/allMomTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line"
+                android:background="@drawable/list_bg"
+                android:text="View All Moments"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/moreTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/char_spacing"
+            android:background="@color/line_color"
+            android:padding="@dimen/char_spacing"
+            android:text="@string/more_on_event"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <LinearLayout
+            android:id="@+id/moreLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/editTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line"
+                android:background="@drawable/list_bg"
+                android:text="@string/edit_event"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+
+            <TextView
+                android:id="@+id/deleteTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line"
+                android:background="@drawable/list_bg"
+                android:text="@string/delete_event"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

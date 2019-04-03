@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg_initial_color">#b9e0e2</color>
+    <color name="bg_end_color">#cc88ed</color>
+    <color name="button_stroke">#000</color>
+    <color name="question">#7e2889</color>
+    <color name="link">#173094</color>
+    <color name="error_color">#ff0000</color>
+    <color name="waiting_color">#ac6e10</color>
+    <color name="line_color">#f4f3f3</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="toolbar_start_color">#001fea</color>
+    <color name="toolbar_end_color">#39592c</color>
+    <color name="header_start">#4f0869</color>
+    <color name="header_center">#d7ff6a</color>
+    <color name="header_end">#0b3d07</color>
+    <color name="header_color">#000</color>
+    <color name="title_color">#701fbc</color>
+    <color name="bg_top">#a3cfee</color>
+    <color name="bg_bottom">#808ec4</color>
+    <color name="box_bottom">#0b3042</color>
+    <color name="box_top">#94b1da</color>
+    <color name="red_color">#ff0000</color>
+    <color name="selected_tab">#06493e</color>
+    <color name="lime">#a3ff9b</color>
+    <color name="grey">#ccc</color>
+    <color name="welcome_color">#9225b9</color>
+    <color name="yellow">#f8ff71</color>
+    <color name="grad_end">#ac7ada</color>
+    <color name="yellow_deep">#b9b606</color>
+    <color name="blue">#0000ff</color>
+</resources>

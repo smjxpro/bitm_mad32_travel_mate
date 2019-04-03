@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/profile">
+            <menu>
+                <item
+                    android:id="@+id/profile"
+                    android:icon="@drawable/profile"
+                    android:title="@string/profile" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/events">
+            <menu>
+                <item
+                    android:id="@+id/events"
+                    android:icon="@drawable/event"
+                    android:title="@string/events" />
+            </menu>
+        </item>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/weather">
+            <menu>
+                <item
+                    android:id="@+id/weather"
+                    android:icon="@drawable/weather"
+                    android:title="@string/weather" />
+            </menu>
+        </item>
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/location">
+            <menu>
+                <item
+                    android:id="@+id/map"
+                    android:icon="@drawable/map"
+                    android:title="@string/map" />
+                <item
+                    android:id="@+id/nearby"
+                    android:icon="@drawable/nearby"
+                    android:title="@string/nearby" />
+            </menu>
+        </item>
+    </group>
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+
+
+
+</menu>

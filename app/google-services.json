@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "243239522090",
+    "firebase_url": "https://bitm-918c7.firebaseio.com",
+    "project_id": "bitm-918c7",
+    "storage_bucket": "bitm-918c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243239522090:android:6a4a31cea683a929",
+        "android_client_info": {
+          "package_name": "pro.smjx.travelmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243239522090-kb804p575m6r6nhoo6n8or5lvom8adnk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pro.smjx.travelmate",
+            "certificate_hash": "80b9dc7e0a63d27eddbb14c1e238533f6ddce994"
+          }
+        },
+        {
+          "client_id": "243239522090-1ftcgo5oni709bg1iaq8cdiji5d3812r.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "243239522090-1ftcgo5oni709bg1iaq8cdiji5d3812r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl6YYHOXDn1_DYiYYqOzVFVJUsCsO7wkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243239522090-1ftcgo5oni709bg1iaq8cdiji5d3812r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

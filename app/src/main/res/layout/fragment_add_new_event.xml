@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3"
+    android:fillViewport="true"
+    tools:context=".activities.DrawerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/char_spacing">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/char_spacing"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Event Name: "
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+
+            <EditText
+                android:id="@+id/eventNameEt"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="@string/enter_event_name"
+                android:inputType="text"
+                android:textSize="@dimen/default_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/char_spacing"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Departure: "
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+
+            <EditText
+                android:id="@+id/deptEt"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Starting location"
+                android:inputType="text"
+                android:textSize="@dimen/default_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/char_spacing"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Destination: "
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+
+            <EditText
+                android:id="@+id/destEt"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Your destination"
+                android:inputType="text"
+                android:textSize="@dimen/default_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/char_spacing"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/departure_date_c"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+
+            <Button
+                android:id="@+id/dateBtn"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/char_spacing"
+                android:layout_weight="1"
+                android:text="@string/please_select"
+                android:textAllCaps="false"
+                android:textSize="@dimen/default_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/char_spacing"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/budget_c"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size" />
+
+            <EditText
+                android:id="@+id/budgetEt"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Estimated budget"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/default_text_size" />
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/char_spacing"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="0sp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="Departure:"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="@dimen/default_text_size" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/deptBtn"-->
+        <!--android:layout_width="0sp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_marginLeft="@dimen/char_spacing"-->
+        <!--android:text="@string/choose_location"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textSize="@dimen/default_text_size" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/char_spacing"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="0sp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="Destination:"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="@dimen/default_text_size" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/destBtn"-->
+        <!--android:layout_width="0sp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_marginLeft="@dimen/char_spacing"-->
+        <!--android:text="@string/choose_location"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textSize="@dimen/default_text_size" />-->
+        <!--</LinearLayout>-->
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/char_spacing"
+            android:text="@string/creating"
+            android:textColor="@color/waiting_color"
+            android:textSize="@dimen/default_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/errorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/char_spacing"
+            android:text="@string/error"
+            android:textColor="@color/error_color"
+            android:textSize="@dimen/default_text_size"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_spacing"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/createBtn"
+                android:layout_width="64sp"
+                android:layout_height="64sp"
+                android:layout_gravity="center"
+                android:background="@drawable/add_button_colored" />
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/normal_spacing"
+                android:background="@drawable/cancel_colored" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

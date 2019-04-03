@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e3e3e3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="@dimen/normal_spacing"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/char_spacing"
+            android:layout_marginRight="@dimen/char_spacing"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/loading"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_size"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginRight="@dimen/char_spacing"
+                        android:text="Rating:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:id="@+id/ratingTv"
+                        android:text="@string/loading"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/char_spacing"
+                    android:text="Date:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/dateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/colorAccent"
+        />
+</LinearLayout>
