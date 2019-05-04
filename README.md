@@ -1,2 +1,2 @@
 # BITM-MAD32-TravelMate
-Final Project for BITM Mobile App Development
+Fourth and final Project for BITM Mobile App Development course
